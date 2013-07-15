@@ -1,13 +1,15 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+gem 'capistrano'
 
 group :development do
   gem 'sqlite3'
 end
 
 group :production do
-  gem 'pg'
+  gem 'mysql2'
+  gem 'unicorn'
 end
 
 gem 'carrierwave'
