@@ -55,5 +55,8 @@ module Railsgirls
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    #required for Heroku to work with devise
+    config.assets.initialize_on_precompile = false
   end
 end
